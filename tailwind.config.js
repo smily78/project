@@ -1,0 +1,57 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        gray: {
+          100: "#f2f2f2",
+          200: "#ebebeb",
+          300: "#dbdbdb",
+          500: "#acacac",
+          600: "#6f6f6f",
+          700: "#5e5e5e",
+          800: "#454545",
+          900: "#07191f",
+          "900_14": "#0d293114",
+          "900_2b": "#0d29312b",
+          "300_01": "#e6e6e6",
+        },
+        red: { 50: "#fff1f4", 500: "#f83838", 600: "#eb3131" },
+        pink: {
+          50: "#f8dde3",
+          100: "#f6c1c7",
+          200: "#fba0b5",
+          400: "#c64b68",
+          900: "#641c36",
+        },
+        green: { 600: "#3bad49" },
+        orange: { 50: "#ffeade", A100: "#ffd77c" },
+        blue: { 900: "#1a46b7" },
+        blue_gray: { 100: "#d0d0d0", 400: "#8c8c8c" },
+        cyan: { 50: "#dff9f3", 900: "#054e58", "900_01": "#054d58" },
+        amber: { 600: "#f6b60b" },
+        teal: { 50: "#d1ecf7" },
+        deep_purple: { 50: "#efe9ff" },
+        indigo: { 400: "#5778c5" },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: {
+        poppins: "Poppins",
+        manrope: "Manrope",
+        shipporimincho: "Shippori Mincho",
+        sourcesans: "Source Sans 3",
+      },
+      boxShadow: {
+        bs: "0px 0px  20px 0px #0d29312b",
+        bs1: "0px 0px  30px 0px #0d293114",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
